@@ -228,29 +228,122 @@ Plugin exposes following commands:
 * OGPT Sessions: (Toggled by \<Ctrl-o\>,) Sessions panel to display chat sessions.
 
 #### Useful shortcuts
-Area | Default shortcuts | Description
----- | ---- | ----
-Common | Ctrl-o | Toggle parameter panel (OGPT Parameters) and sessions panel (OGPT Sessions).
-     ^ | Ctrl-n | Create a new session.
-     ^ |      q | Close OGPT.
-     ^ | Ctrl-c | Close OGPT.
-     ^ | Ctrl-i | Copy code in LLM's latest response in OGPT output text area.
-     ^ | Ctrl-c | Close OGPT.
-     ^ | Ctrl-x | Stop generating response.
-     ^ |    Tab | Cycle through panes.
-OGPT |      K | Previous response.
-   ^ |      J | Next response.
-   ^ | Ctrl-u | Scroll up.
-   ^ | Ctrl-d | Scroll down.
-OGPT Chat |  Enter | Send prompt to LLM.
-        ^ | Alt-Enter (input mode inside OGPT Chat) | Send prompt to LLM.
-        ^ | Ctrl-y | Copy the latest response from LLM in OGPT output text area.
-        ^ | Ctrl-r | Toggle role (assistant or user).
-        ^ | Ctrl-s | Toggle system message.
-OGPT Parameters | Enter | Change parameter.
-OGPT Sessions | Enter | Switch session.
-            ^ |     d | Delete session.
-            ^ |     r | Rename session. Note that an active session cannot be removed.
+<table>
+    <thead>
+        <tr>
+            <th>Area</th>
+            <th>Default shortcuts</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=6>Common</td>
+            <td>Ctrl-o</td>
+            <td>Toggle parameter panel (OGPT Parameters) and sessions panel (OGPT Sessions).</td>
+        </tr>
+        <tr>
+            <td>Ctrl-n</td>
+            <td>Create a new session.</td>
+        </tr>
+        <tr>
+            <td>Ctrl-c</td>
+            <td>Close OGPT.
+        </tr>
+        <tr>
+            <td>Ctrl-i</td>
+            <td>Copy code in LLM's latest response in OGPT output text area.
+        </tr>
+        <tr>
+            <td>Ctrl-x</td>
+            <td>Stop generating response.</td>
+        </tr>
+        <tr>
+            <td>Tab</td>
+            <td>Cycle through panes.</td>
+        </tr>
+        <tr>
+            <td rowspan=4>OGPT</td>
+            <td>K</td>
+            <td>Previous response.</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>Next response.</td>
+        </tr>
+        <tr>
+            <td>Ctrl-u</td>
+            <td>Scroll up.</td>
+        </tr>
+        <tr>
+            <td>Ctrl-d</td>
+            <td>Scroll down.</td>
+        </tr>
+        <tr>
+            <td rowspan=5>OGPT Chat</td>
+            <td>Enter<br>(normal mode)</td>
+            <td>Send prompt to LLM.</td>
+        </tr>
+        <tr>
+          <td>Alt-Enter<br>(input mode)</td>
+          <td>Send prompt to LLM.</td>
+        </tr>
+        <tr>
+          <td>Ctrl-y</td>
+          <td>Copy the latest response from LLM in OGPT output text area.</td>
+        </tr>
+        <tr>
+          <td>Ctrl-r</td>
+          <td>Toggle role (assistant or user).</td>
+        </tr>
+        <tr>
+          <td>Ctrl-s</td>
+          <td>Toggle system message.</td>
+        </tr>
+        <tr>
+          <td rowspan=1>OGPT Parameters</td>
+          <td>Enter</td>
+          <td>Change parameter.</td>
+        </tr>
+        <tr>
+            <td rowspan=3>OGPT Sessions</td>
+            <td>Enter</td>
+            <td>Switch session.</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>Delete session.</td>
+        </tr>
+        <tr>
+            <td>r</td>
+            <td>Rename session. Note that an active session cannot be removed.</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Area | Default shortcuts | Description -->
+<!-- ---- | ---- | ---- -->
+<!-- Common | Ctrl-o | Toggle parameter panel (OGPT Parameters) and sessions panel (OGPT Sessions). -->
+<!--      ^ | Ctrl-n | Create a new session. -->
+<!--      ^ |      q | Close OGPT. -->
+<!--      ^ | Ctrl-c | Close OGPT. -->
+<!--      ^ | Ctrl-i | Copy code in LLM's latest response in OGPT output text area. -->
+<!--      ^ | Ctrl-c | Close OGPT. -->
+<!--      ^ | Ctrl-x | Stop generating response. -->
+<!--      ^ |    Tab | Cycle through panes. -->
+<!-- OGPT |      K | Previous response. -->
+<!--    ^ |      J | Next response. -->
+<!--    ^ | Ctrl-u | Scroll up. -->
+<!--    ^ | Ctrl-d | Scroll down. -->
+<!-- OGPT Chat |  Enter | Send prompt to LLM. -->
+<!--         ^ | Alt-Enter (input mode inside OGPT Chat) | Send prompt to LLM. -->
+<!--         ^ | Ctrl-y | Copy the latest response from LLM in OGPT output text area. -->
+<!--         ^ | Ctrl-r | Toggle role (assistant or user). -->
+<!--         ^ | Ctrl-s | Toggle system message. -->
+<!-- OGPT Parameters | Enter | Change parameter. -->
+<!-- OGPT Sessions | Enter | Switch session. -->
+<!--             ^ |     d | Delete session. -->
+<!--             ^ |     r | Rename session. Note that an active session cannot be removed. -->
 
 Shortcuts for OGPT interactive window can be modified at `opts.chat.keymaps`.
 
